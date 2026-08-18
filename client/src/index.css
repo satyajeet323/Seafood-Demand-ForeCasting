@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #f4f6fb;
+    --surface: #ffffff;
+    --card: #ffffff;
+    --border: #e2e8f0;
+    --text: #0f172a;
+    --muted: #475569;
+    --accent: #2563eb;
+    --accent-alt: #0ea5e9;
+    --success-bg: #ecfdf3;
+    --success-border: #34d399;
+    --info-bg: #eef2ff;
+    --info-border: #818cf8;
+    --warning-bg: #fff7ed;
+    --warning-border: #fb923c;
+    --grid: #d0d7e3;
+  }
+  .dark {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --card: #1f2937;
+    --border: #334155;
+    --text: #f8fafc;
+    --muted: #cbd5e1;
+    --accent: #60a5fa;
+    --accent-alt: #818cf8;
+    --success-bg: #064e3b;
+    --success-border: #34d399;
+    --info-bg: #1e3a8a;
+    --info-border: #60a5fa;
+    --warning-bg: #78350f;
+    --warning-border: #fbbf24;
+    --grid: #334155;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+  }
+  .mat-icon {
+    font-family: 'Material Symbols Rounded';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1;
+    user-select: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga';
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+}

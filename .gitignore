@@ -1,0 +1,45 @@
+# ── Python / Server ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+mlruns/
+mlartifacts/
+*.pkl
+*.parquet
+server/data/raw/*.csv
+server/data/processed/*.parquet
+
+# ── Node / Client ─────────────────────────────────────────────────
+node_modules/
+client/dist/
+client/.env
+client/.env.local
+*.tsbuildinfo
+
+# ── Environment ───────────────────────────────────────────────────
+.env
+.env.local
+.env.production
+
+# ── OS ────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
