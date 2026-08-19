@@ -71,6 +71,15 @@ cd client; npm run dev
 
 ## Production Deployment
 
-- **Backend**: Deploy `server/` to Render / Railway / Fly.io
-- **Frontend**: Deploy `client/` to Vercel
-  - Set `VITE_API_URL=https://your-backend-url.com` in Vercel env vars
+**⚡ Quick Start:** See [`QUICK_DEPLOY.md`](QUICK_DEPLOY.md) for simplified 3-step deployment.
+
+**📋 Full Guide:** See [`DEPLOYMENT_SUMMARY.md`](DEPLOYMENT_SUMMARY.md) for complete deployment information.
+
+### Backend Options:
+- **Render** (recommended) - See `server/RENDER_FIX.md` for detailed guide
+- **Railway** - Good Python support
+- **Fly.io** - Excellent for Python apps
+
+### Frontend:
+- **Vercel** - See `VERCEL_DEPLOY.md` for step-by-step guide
+- Set `VITE_API_URL=https://your-backend-url.com` in environment variables
