@@ -21,12 +21,12 @@
    Region: Choose closest to you
    Root Directory: server
    Runtime: Python 3
-   Build Command: pip install --upgrade pip && pip install -r requirements.txt
+   Build Command: pip install --upgrade pip setuptools wheel && pip install --no-cache-dir -r requirements.txt
    Start Command: uvicorn app.main:app --host 0.0.0.0 --port $PORT
    ```
 5. Add Environment Variables:
    ```
-   PYTHON_VERSION = 3.11.9
+   PYTHON_VERSION = 3.11.0
    CORS_ORIGINS = http://localhost:5173,http://localhost:5174
    ```
 6. Click "Create Web Service"

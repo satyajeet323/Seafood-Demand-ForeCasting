@@ -3,27 +3,23 @@ fastapi==0.115.0
 uvicorn[standard]==0.32.0
 python-multipart==0.0.12
 
-# Data Processing
-numpy==1.26.4
-pandas==2.2.3
-scipy==1.13.1
+# Data Processing - Using versions with prebuilt wheels
+numpy==1.24.3
+pandas==2.0.3
 
-# ML Libraries
-scikit-learn==1.5.2
-xgboost==2.1.2
-lightgbm==4.5.0
-prophet==1.1.5
+# ML Libraries - Simplified versions
+scikit-learn==1.3.2
+xgboost==2.0.3
+lightgbm==4.1.0
 
 # Visualization
-plotly==5.24.1
-matplotlib==3.9.2
+plotly==5.18.0
 
 # Utilities
 python-dotenv==1.0.1
-pyyaml==6.0.2
-joblib==1.4.2
-holidays==0.58
+pyyaml==6.0.1
+joblib==1.3.2
+holidays==0.35
 
-# Optional - Remove if not using
-# mlflow==2.16.2
-# psycopg2-binary==2.9.9
+# Note: Prophet, scipy, matplotlib removed to avoid build issues
+# The app uses SimpleForecastEngine with sample data, so these aren't critical

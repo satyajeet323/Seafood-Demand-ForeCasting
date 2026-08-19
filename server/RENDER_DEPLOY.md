@@ -15,7 +15,7 @@ Region:             Oregon (US West) or closest to you
 Branch:             main
 Root Directory:     server
 Runtime:            Python 3
-Build Command:      pip install --upgrade pip && pip install -r requirements.txt
+Build Command:      pip install --upgrade pip setuptools wheel && pip install --no-cache-dir -r requirements.txt
 Start Command:      uvicorn app.main:app --host 0.0.0.0 --port $PORT
 ```
 
@@ -25,7 +25,7 @@ In the "Environment" section, add:
 
 | Key | Value |
 |-----|-------|
-| `PYTHON_VERSION` | `3.11.9` |
+| `PYTHON_VERSION` | `3.11.0` |
 | `CORS_ORIGINS` | `http://localhost:5173,http://localhost:5174` |
 
 ### Step 3: Deploy

@@ -3,9 +3,11 @@
 
 set -o errexit  # Exit on error
 
+echo "Upgrading pip..."
+pip install --upgrade pip setuptools wheel
+
 echo "Installing dependencies..."
-pip install --upgrade pip
-pip install -r requirements.txt
+pip install --no-cache-dir -r requirements.txt
 
 echo "Creating necessary directories..."
 mkdir -p data/processed
