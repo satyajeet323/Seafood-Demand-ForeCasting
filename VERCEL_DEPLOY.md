@@ -21,15 +21,17 @@
    Region: Choose closest to you
    Root Directory: server
    Runtime: Python 3
-   Build Command: pip install -r requirements.txt
+   Build Command: pip install --upgrade pip && pip install -r requirements.txt
    Start Command: uvicorn app.main:app --host 0.0.0.0 --port $PORT
    ```
-5. Add Environment Variable:
+5. Add Environment Variables:
    ```
-   PYTHON_VERSION = 3.11
+   PYTHON_VERSION = 3.11.9
+   CORS_ORIGINS = http://localhost:5173,http://localhost:5174
    ```
 6. Click "Create Web Service"
-7. **COPY THE URL** (e.g., `https://seafood-backend.onrender.com`)
+7. **Wait 5-10 minutes** for first deployment
+8. **COPY THE URL** (e.g., `https://seafood-backend.onrender.com`)
 
 ---
 

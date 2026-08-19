@@ -9,13 +9,18 @@
 2. Create a new "Web Service"
 3. Connect your GitHub repository
 4. Configure:
+   - **Name**: seafood-api (or any name you prefer)
+   - **Region**: Choose closest to your users
    - **Root Directory**: `server`
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `python run.py` or `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+   - **Runtime**: Python 3
+   - **Build Command**: `pip install --upgrade pip && pip install -r requirements.txt`
+   - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
    - **Environment Variables**: 
-     - `PYTHON_VERSION=3.11`
-     - `PORT=8000`
-5. Copy your deployed backend URL (e.g., `https://your-app.onrender.com`)
+     - `PYTHON_VERSION=3.11.9`
+     - `CORS_ORIGINS=http://localhost:5173,http://localhost:5174`
+5. Click "Create Web Service"
+6. Wait 5-10 minutes for deployment
+7. Copy your deployed backend URL (e.g., `https://your-app.onrender.com`)
 
 #### Option B: Railway
 1. Go to [railway.app](https://railway.app)

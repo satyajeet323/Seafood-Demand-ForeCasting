@@ -4,6 +4,7 @@ Full-stack application with a **FastAPI backend** and a **React + Vite frontend*
 
 ```
 project-root/
+├── .env.example  ← Environment variables for both frontend & backend
 ├── server/       ← Python FastAPI backend
 │   ├── app/          FastAPI app + SimpleForecastEngine
 │   ├── config/       config.yaml, model_config.yaml
